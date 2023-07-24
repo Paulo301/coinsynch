@@ -1,6 +1,12 @@
+import { FormControlLabel, Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    <h1>Hello world</h1>
+    <>
+      <Typography variant="h1">
+        Hello World
+      </Typography>
+    </>
+    
   )
 }
