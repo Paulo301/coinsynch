@@ -1,6 +1,17 @@
 import { createTheme } from '@mui/material/styles';
+import { textBase, white } from './colors';
 
 export const theme = createTheme({
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          backgroundColor: white,
+          color: textBase,
+        }
+      }
+    }
+  },
   typography: {
     fontFamily: 'Roboto, sans-serif',
     h1: {
