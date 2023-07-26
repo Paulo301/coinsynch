@@ -1,6 +1,25 @@
 import { createTheme } from '@mui/material/styles';
 import { textBase, white } from './colors';
 
+declare module '@mui/material/styles' {
+  interface TypographyVariants {
+    label: React.CSSProperties;
+    smLabel: React.CSSProperties;
+  }
+
+  interface TypographyVariantsOptions {
+    label?: React.CSSProperties;
+    smLabel?: React.CSSProperties;
+  }
+}
+
+declare module '@mui/material/Typography' {
+  interface TypographyPropsVariantOverrides {
+    label: true;
+    smLabel: true;
+  }
+}
+
 export const theme = createTheme({
   components: {
     MuiCssBaseline: {
@@ -10,7 +29,7 @@ export const theme = createTheme({
           color: textBase,
         }
       }
-    }
+    },
   },
   typography: {
     fontFamily: 'Roboto, sans-serif',
@@ -55,6 +74,18 @@ export const theme = createTheme({
       lineHeight: '1.5rem',
       letterSpacing: '0',
       fontWeight: 400,
-    }
+    },
+    label: {
+      fontSize: '0.875rem',
+      lineHeight: '1rem',
+      letterSpacing: '0',
+      fontWeight: 400,
+    },
+    smLabel: {
+      fontSize: '0.75rem',
+      lineHeight: '0.875rem',
+      letterSpacing: '0',
+      fontWeight: 400,
+    },
   },
 });

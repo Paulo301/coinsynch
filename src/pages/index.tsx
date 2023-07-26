@@ -1,15 +1,14 @@
-import { Button } from "@/components/Button";
-import { Typography } from "@mui/material";
+import { HeaderDefault } from "@/components/HeaderDefault";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
-      <Typography variant="h1">
-        Hello World
-      </Typography>
-      <Button size="medium">
-        Teste
-      </Button>
+      <Head>
+        <title>Home | CoinSynch</title>
+      </Head>
+
+      <HeaderDefault />
     </>
     
   )
