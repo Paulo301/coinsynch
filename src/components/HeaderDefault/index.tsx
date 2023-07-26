@@ -1,4 +1,3 @@
-import { white } from "@/styles/colors";
 import { Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Image from "next/image";
@@ -9,7 +8,6 @@ import { CoinCarousel } from "./CoinCarousel";
 const Container = styled(Box)({
   width: "100%",
   height: "4rem",
-  backgroundColor: white,
 });
 
 const Content = styled(Box)({
