@@ -13,7 +13,7 @@ export function Authentication() {
   return (
     <Container>
       <Typography variant="label">Sign in</Typography>
-      <Button size="small">Sign up</Button>
+      <Button size="small" sx={{ width: '6.25rem' }}>Sign up</Button>
     </Container>
   );
 }
