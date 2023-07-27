@@ -51,7 +51,7 @@ export function CoinCarousel({}: CoinCarouselProps) {
         
       >
         {coins.map((coin) => (
-          <CustomSwiperSlide>
+          <CustomSwiperSlide key={coin.id}>
             <Coin key={coin.id} coin={coin} />
           </CustomSwiperSlide>
         ))}
