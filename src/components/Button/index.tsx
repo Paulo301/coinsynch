@@ -34,7 +34,7 @@ const customTheme = createTheme({
           borderRadius: '32px',
           backgroundColor: primary[500],
           color: white,
-          textTransform: 'capitalize',
+          textTransform: 'none',
           ':hover': {
             backgroundColor: primary[600],
           }
