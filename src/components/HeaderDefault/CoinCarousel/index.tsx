@@ -2,10 +2,8 @@ import { List } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 import { Coin } from "./Coin";
-import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { useRef } from "react";
-import { Button } from "@/components/Button";
 
 const coins = [
   { id: 1, name: "BIT", value: "R$ 23,62", variation: "+7,082" },

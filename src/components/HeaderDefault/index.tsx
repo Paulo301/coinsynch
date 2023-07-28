@@ -18,13 +18,18 @@ const Content = styled(Box)({
   margin: "0 auto",
 });
 
+const LogoImage = styled(Image)({
+  width: "7.75rem",
+  height: "1.313rem",
+});
+
 interface HeaderDefaultProps {}
 
 export function HeaderDefault({}: HeaderDefaultProps) {
   return (
     <Container component="header">
       <Content>
-        <Image alt="CoinSynch" src="/images/logo.png" width={124} height={21} />
+        <LogoImage alt="CoinSynch" src="/images/logo.png" width={248} height={42} />
 
         <Navigation />
         
