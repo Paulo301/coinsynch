@@ -31,6 +31,7 @@ const customTheme = createTheme({
             gap: '0.625rem',
           }),
           fontFamily: 'Roboto, sans-serif',
+          fontWeight: 400,
           borderRadius: '32px',
           backgroundColor: primary[500],
           color: white,

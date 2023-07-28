@@ -2,8 +2,10 @@ import { Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Head from "next/head";
 import Image from "next/image";
+
 import { HeaderDefault } from "@/components/HeaderDefault";
 import { AboutUs } from "@/components/AboutUs";
+import { OurServices } from "@/components/OurServices";
 
 const WavesImage = styled(Image)({
   width: "100%",
@@ -23,6 +25,7 @@ export default function Home() {
       <Box component="main">
         <AboutUs />
         <WavesImage alt="" src="/images/waves.png" width={1440} height={247} />
+        <OurServices />
       </Box>
     </>
   );
