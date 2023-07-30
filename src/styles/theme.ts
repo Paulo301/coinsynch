@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-import { primary, textBase, white } from "./colors";
+import { primary, secondary, textBase, white } from "./colors";
 
 declare module "@mui/material/styles" {
   interface TypographyVariants {
@@ -20,6 +20,12 @@ declare module "@mui/material/Typography" {
   }
 }
 
+declare module "@mui/material/TableCell" {
+  interface ButtonPropsVariantOverrides {
+    dashed: true;
+  }
+}
+
 export const theme = createTheme({
   components: {
     MuiCssBaseline: {
@@ -27,6 +33,40 @@ export const theme = createTheme({
         body: {
           backgroundColor: white,
           color: textBase,
+        },
+      },
+    },
+    MuiTableCell: {
+      variants: [
+        {
+          props: { variant: "head" },
+          style: {
+            fontSize: "0.875rem",
+            lineHeight: "1rem",
+            letterSpacing: "0",
+            fontWeight: 400,
+            color: textBase,
+            border: 0,
+            padding: "0.5rem 1.5rem",
+          },
+        },
+        {
+          props: { variant: "body" },
+          style: {
+            color: textBase,
+            border: 0,
+            padding: "1rem 1.5rem",
+          },
+        },
+      ],
+    },
+    MuiTableRow: {
+      styleOverrides: {
+        root: {
+          border: 0,
+          "&:nth-of-type(even)": {
+            backgroundColor: secondary[100],
+          },
         },
       },
     },

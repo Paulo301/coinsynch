@@ -6,6 +6,7 @@ import Image from "next/image";
 import { HeaderDefault } from "@/components/HeaderDefault";
 import { AboutUs } from "@/components/AboutUs";
 import { OurServices } from "@/components/OurServices";
+import { TopCryptos } from "@/components/TopCryptos";
 
 const WavesImage = styled(Image)({
   width: "100%",
@@ -26,6 +27,7 @@ export default function Home() {
         <AboutUs />
         <WavesImage alt="" src="/images/waves.png" width={1440} height={247} />
         <OurServices />
+        <TopCryptos />
       </Box>
     </>
   );
