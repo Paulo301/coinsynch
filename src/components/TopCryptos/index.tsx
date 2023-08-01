@@ -150,7 +150,7 @@ export function TopCryptos({}: TopCryptosProps) {
   );
 
   return (
-    <Container>
+    <Container id="top-cryptos">
       <Typography variant="h3">Top Cryptos</Typography>
       <TopCryptosTable data={defaultData} columns={columns} />
     </Container>
