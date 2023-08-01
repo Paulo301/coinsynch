@@ -8,6 +8,7 @@ import { AboutUs } from "@/components/AboutUs";
 import { OurServices } from "@/components/OurServices";
 import { TopCryptos } from "@/components/TopCryptos";
 import { Newsletter } from "@/components/Newsletter";
+import { FooterDefault } from "@/components/FooterDefault";
 
 const WavesImage = styled(Image)({
   width: "100%",
@@ -31,6 +32,8 @@ export default function Home() {
         <TopCryptos />
         <Newsletter />
       </Box>
+
+      <FooterDefault />
     </>
   );
 }
