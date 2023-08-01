@@ -1,38 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  CoinSynch
+</h1>
 
-## Getting Started
+<h3 align="center">
+  Implementação da interface de uma landing page e de um dashboard
+</h3>
 
-First, run the development server:
+<h4 align="center">
+	🚧   Em construção   🚧
+</h4>
+
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre o projeto](#user-content--sobre-o-projeto)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+     * [Pré-requisitos](#pré-requisitos)
+     * [Rodando a aplicação](#user-content--rodando-a-aplicação)
+   * [Tecnologias](#user-content--tecnologias)
+   * [Autor](#user-content--autor)
+<!--te-->
+
+
+## 💻 Sobre o projeto
+
+Se trata da implementação da interface de uma landing page e de um dashboard de uma corretora que trabalha com cryptomoedas, nela há conexão com uma api externa para recuperação dos dados sobre algumas cryptomoedas e integração com uma api fake para criação de conta, login e para manter os dados do usuário sobre suas moedas.
+
+---
+
+## 🚀 Como executar o projeto
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [NPM](https://www.npmjs.com/), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+
+#### ▶️ Rodando a aplicação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+# Clone este repositório
+$ git clone https://github.com/Paulo301/coinsynch.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd coinsynch
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 🛠 Tecnologias
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+-   **[Next.js](https://nextjs.org/)**  
+-   **[TypeScript](https://www.typescriptlang.org/)**
+-   **[Material UI](https://mui.com/)**
+-   **[Axios](https://axios-http.com/ptbr/docs/intro)**
+-   **[React Hook Form](https://www.react-hook-form.com/)**
+-   **[Yup](https://github.com/jquense/yup)**
+-   **[Redux](https://redux.js.org/)**
+-   **[Tanstack Query](https://tanstack.com/query/latest)**
+-   **[Tanstack Table](https://tanstack.com/table/v8)**
+-   **[Jest](https://jestjs.io/)**
+-   **[Testing Library](https://testing-library.com/)**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+> Veja o arquivo  [package.json](https://github.com/Paulo301/coinsynch/blob/main/package.json)
 
-## Learn More
+#### **Utilitários**
 
-To learn more about Next.js, take a look at the following resources:
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 👤 Autor
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<a href="https://github.com/Paulo301">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51863723?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Paulo Victor</b></sub></a>
+ <br />
+ 
+![Linkedin Badge](https://img.shields.io/badge/-Paulo%20Victor-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/paulo-victor-lemos-de-almeida-569040186/)
