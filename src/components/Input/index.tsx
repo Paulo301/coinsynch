@@ -12,7 +12,7 @@ import { white } from "@/styles/colors";
 const StyledInput = styled(InputBase)({
   backgroundColor: white,
   marginTop: "0.5rem",
-  borderRadius: "5px",
+  borderRadius: "6px",
   input: {
     padding: "1rem",
   },
