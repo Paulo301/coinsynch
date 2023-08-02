@@ -25,7 +25,6 @@ Tabela de conteúdos
 ## 💻 Sobre o projeto
 
 Se trata da implementação da interface de uma landing page e de um dashboard de uma corretora que trabalha com cryptomoedas, nela há conexão com uma api externa para recuperação dos dados sobre algumas cryptomoedas e integração com uma api fake para criação de conta, login e para manter os dados do usuário sobre suas moedas.
-
 Este projeto foi criado com o modelo create-next-app.
 
 ---
