@@ -53,7 +53,6 @@ export function NewsletterForm() {
         type="submit"
         fullWidth
         size="large"
-        sx={{ boxShadow: "0 12px 24px rgba(0, 0, 0, 0.1)" }}
       >
         Subscribe
       </Button>
