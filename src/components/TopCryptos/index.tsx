@@ -1,11 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Box, SvgIcon, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { createColumnHelper } from "@tanstack/react-table";
 import Image from "next/image";
 import { useMemo } from "react";
 import { Button } from "@/components/Button";
-import { quartenary, secondary, tertiary } from "@/styles/colors";
+import { primary, quartenary, secondary, tertiary } from "@/styles/colors";
 import { TopCryptosTable } from "./TopCryptosTable";
+import PlusIcon from "public/images/outlinePlus.svg";
 
 const defaultData: Crypto[] = [
   {
@@ -52,13 +53,21 @@ const Container = styled(Box)({
   alignItems: "center",
   maxWidth: "76rem",
   margin: "0 auto",
-  paddingBlock: "7.5rem"
+  paddingBlock: "7.5rem",
 });
 
 const CryptoContainer = styled(Box)({
   display: "flex",
   alignItems: "center",
   gap: "1rem",
+});
+
+const OutlinePlus = styled(SvgIcon)({
+  width: "0.75rem",
+  height: "auto",
+  "& path": {
+    fill: primary[500],
+  },
 });
 
 export type Crypto = {
@@ -153,6 +162,12 @@ export function TopCryptos({}: TopCryptosProps) {
     <Container id="top-cryptos">
       <Typography variant="h3">Top Cryptos</Typography>
       <TopCryptosTable data={defaultData} columns={columns} />
+      <Button variant="textBody" sx={{ marginTop: "2rem", color: primary[500] }}>
+        View more{" "}
+        <OutlinePlus>
+          <PlusIcon />
+        </OutlinePlus>
+      </Button>
     </Container>
   );
 }
