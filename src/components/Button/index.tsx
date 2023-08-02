@@ -10,8 +10,11 @@ interface ButtonProps extends MUIButtonProps {
 const customTheme = createTheme({
   components: {
     MuiButton: {
+      defaultProps: {
+        variant: "contained",
+      },
       styleOverrides: {
-        root: ({ ownerState }) => ({
+        root: ({ ownerState, theme }) => ({
           ...(ownerState.size === 'small'  && {
               fontSize: '0.875rem',
               lineHeight: '1rem',
@@ -29,6 +32,17 @@ const customTheme = createTheme({
             lineHeight: '1.5rem',
             padding: '0.875rem 1.5rem',
             gap: '0.625rem',
+          }),
+          ...(ownerState.variant?.includes("text")  && {
+            color: 'inherit',
+            padding: '0',
+            gap: '0.5rem',
+          }),
+          ...(ownerState.variant === 'textLabel'  && {
+            ...theme.typography.label
+          }),
+          ...(ownerState.variant === 'textBody'  && {
+            ...theme.typography.body1
           }),
           fontFamily: 'Roboto, sans-serif',
           fontWeight: 400,

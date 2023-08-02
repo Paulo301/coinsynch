@@ -11,6 +11,16 @@ declare module "@mui/material/styles" {
     label?: React.CSSProperties;
     smLabel?: React.CSSProperties;
   }
+
+  interface ButtonVariants {
+    textLabel: React.CSSProperties;
+    textBody: React.CSSProperties;
+  }
+
+  interface ButtonVariantsOptions {
+    textLabel: React.CSSProperties;
+    textBody: React.CSSProperties;
+  }
 }
 
 declare module "@mui/material/Typography" {
@@ -20,9 +30,10 @@ declare module "@mui/material/Typography" {
   }
 }
 
-declare module "@mui/material/TableCell" {
+declare module "@mui/material/Button" {
   interface ButtonPropsVariantOverrides {
-    dashed: true;
+    textLabel: true;
+    textBody: true;
   }
 }
 
