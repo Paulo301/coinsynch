@@ -33,10 +33,22 @@ const customTheme = createTheme({
             padding: '0.875rem 1.5rem',
             gap: '0.625rem',
           }),
+          ...(ownerState.variant === 'contained'  && {
+            borderRadius: '32px',
+            backgroundColor: primary[500],
+            color: white,
+            ':hover': {
+              backgroundColor: primary[600],
+            }
+          }),
           ...(ownerState.variant?.includes("text")  && {
             color: 'inherit',
             padding: '0',
             gap: '0.5rem',
+            minWidth: 0,
+            ':hover': {
+              backgroundColor: 'transparent',
+            }
           }),
           ...(ownerState.variant === 'textLabel'  && {
             ...theme.typography.label
@@ -46,13 +58,7 @@ const customTheme = createTheme({
           }),
           fontFamily: 'Roboto, sans-serif',
           fontWeight: 400,
-          borderRadius: '32px',
-          backgroundColor: primary[500],
-          color: white,
           textTransform: 'none',
-          ':hover': {
-            backgroundColor: primary[600],
-          }
         }),
       },
     }
